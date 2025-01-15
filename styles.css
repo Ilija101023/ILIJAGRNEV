@@ -37,7 +37,7 @@ nav ul li a {
 .hero-section {
     background: url('image.jpg') no-repeat center center/cover;
     height: 50vh;
-    color: white;
+    color: blue;
     text-align: center;
     display: flex;
     flex-direction: column;
