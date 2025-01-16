@@ -7,9 +7,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #333; /*green*/
+    color: #333;
     
-   
 }
 
 header {
@@ -58,7 +57,7 @@ section {
     flex-wrap: wrap;
 }
 .service {
-    background-color:    black;
+    background-color: black;
 
  
    padding: 1rem;
