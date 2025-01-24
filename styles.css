@@ -7,7 +7,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #444;
+    color: #333;
     
 }
 
@@ -30,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: blue;
+    color: ff;
     text-decoration: none;
     font-size: 1.1rem;
 }
