@@ -56,3 +56,69 @@
     </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydro Solutions MKD</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #eef;
+        }
+        .plane {
+            position: absolute;
+            top: 20%;
+            left: -200px;
+            width: 100px;
+            animation: fly 10s linear infinite;
+        }
+        @keyframes fly {
+            from { left: -200px; }
+            to { left: 100%; }
+        }
+        .banner {
+            position: absolute;
+            top: 25%;
+            left: -200px;
+            background: white;
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            border: 2px solid red;
+            animation: fly 10s linear infinite;
+        }
+        .snowflake {
+            position: absolute;
+            top: -50px;
+            font-size: 24px;
+            color: white;
+            text-shadow: 0 0 5px blue;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            from { transform: translateY(-50px); }
+            to { transform: translateY(100vh); }
+        }
+    </style>
+</head>
+<body>
+    <div class="plane"><img src="plane.png" alt="Plane" width="100"></div>
+    <div class="banner">3M</div>
+    <script>
+        function createSnowflake() {
+            let flake = document.createElement("div");
+            flake.className = "snowflake";
+            flake.innerHTML = "❄ 3M";
+            flake.style.left = Math.random() * window.innerWidth + "px";
+            flake.style.animationDuration = (Math.random() * 5 + 5) + "s";
+            document.body.appendChild(flake);
+            setTimeout(() => flake.remove(), 10000);
+        }
+        setInterval(createSnowflake, 500);
+    </script>
+</body>
+</html>
