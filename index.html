@@ -1,124 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MKD Metal Processing</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home" class="hero-section">
-        <h1>Welcome to MKD Metal Processing</h1>
-	    <h2>ILIJA GRNEV</h2>
-    </section>
-    
-    <section id="about">
-        <h2>About Us</h2>
-        <p>MKD Metal Processing specializes in high-quality machining parts, offering our services to clients across Germany, Austria, and Switzerland.</p>
-    </section>
-    
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-container">
-            <div class="service">
-                <h3>Precision Machining</h3>
-                <img src="images/cnc_turning.jpg" alt="CNC Turning" class="service-image">
-                <p>We provide top-notch precision machining services tailored to your needs.</p>
-            </div>
-            <div class="service">
-                <h3>Custom Metal Fabrication</h3>
-                <img src="images/robot.jpg" alt="Robot" class="service-image">
-                <p>Our custom metal fabrication services ensure the highest quality and durability.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email contact:hydrolinksolutions.ilija@gmail.com </p>
-        <p>Phone: +49 15906506419</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 MKD Metal Processing. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="mk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hydro Solutions MKD</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            background-color: #eef;
-        }
-        .plane {
-            position: absolute;
-            top: 20%;
-            left: -200px;
-            width: 100px;
-            animation: fly 10s linear infinite;
-        }
-        @keyframes fly {
-            from { left: -200px; }
-            to { left: 100%; }
-        }
-        .banner {
-            position: absolute;
-            top: 25%;
-            left: -200px;
-            background: white;
-            color: red;
-            font-size: 24px;
-            font-weight: bold;
-            padding: 10px;
-            border: 2px solid red;
-            animation: fly 10s linear infinite;
-        }
-        .snowflake {
-            position: absolute;
-            top: -50px;
-            font-size: 24px;
-            color: white;
-            text-shadow: 0 0 5px blue;
-            animation: fall linear infinite;
-        }
-        @keyframes fall {
-            from { transform: translateY(-50px); }
-            to { transform: translateY(100vh); }
-        }
-    </style>
-</head>
-<body>
-    <div class="plane"><img src="plane.png" alt="Plane" width="100"></div>
-    <div class="banner">3M</div>
-    <script>
-        function createSnowflake() {
-            let flake = document.createElement("div");
-            flake.className = "snowflake";
-            flake.innerHTML = "❄ 3M";
-            flake.style.left = Math.random() * window.innerWidth + "px";
-            flake.style.animationDuration = (Math.random() * 5 + 5) + "s";
-            document.body.appendChild(flake);
-            setTimeout(() => flake.remove(), 10000);
-        }
-	    <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -131,7 +11,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e3f2fd;
+            background-color: #f4f4f4;
             text-align: center;
         }
         .container {
@@ -145,13 +25,13 @@
             max-height: 80vh;
         }
         h1 {
-            color: #1565c0;
+            color: #c00;
             font-size: 36px;
             font-weight: 600;
         }
         h2 {
-            color: #1976d2;
-            border-bottom: 3px solid #1976d2;
+            color: #d32f2f;
+            border-bottom: 3px solid #d32f2f;
             padding-bottom: 5px;
             font-size: 22px;
             font-weight: 600;
@@ -160,7 +40,7 @@
             font-size: 18px;
             margin-bottom: 20px;
             font-weight: 400;
-            color: #0d47a1;
+            color: #c00;
         }
         .section {
             text-align: left;
@@ -174,7 +54,7 @@
         .footer {
             margin-top: 20px;
             font-size: 18px;
-            color: #0d47a1;
+            color: #c00;
             font-weight: bold;
         }
     </style>
@@ -219,7 +99,3 @@
 </body>
 </html>
 
-        setInterval(createSnowflake, 500);
-    </script>
-</body>
-</html>
