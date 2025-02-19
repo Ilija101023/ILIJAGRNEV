@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -11,14 +12,12 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #b3e0ff;
+            background-color: #add8e6;
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            overflow: hidden;
-            position: relative;
         }
         .container {
             width: 80%;
@@ -27,12 +26,34 @@
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
             border-radius: 12px;
             position: relative;
-            z-index: 10;
+            overflow: hidden;
         }
         h1 {
             color: #c00;
             font-size: 42px;
             font-weight: 700;
+            position: relative;
+            z-index: 2;
+        }
+        h1::before {
+            content: "3M";
+            font-size: 100px;
+            font-weight: 700;
+            color: #c00;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.1;
+            z-index: 1;
+        }
+        .leak-effect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: url('leak-animation.gif') repeat-x;
         }
         h2 {
             color: #d32f2f;
@@ -56,37 +77,11 @@
             color: #c00;
             text-decoration: none;
         }
-        .dripping {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100px;
-            background: url('dripping-lepak.png') repeat-x;
-            background-size: contain;
-            z-index: 5;
-        }
-        .floating-3m {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 120px;
-            font-weight: bold;
-            color: red;
-            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-            animation: floatAnimation 3s infinite alternate;
-        }
-        @keyframes floatAnimation {
-            from { transform: translate(-50%, -50%) translateY(-10px); }
-            to { transform: translate(-50%, -50%) translateY(10px); }
-        }
     </style>
 </head>
 <body>
-    <div class="dripping"></div>
-    <div class="floating-3m">3M</div>
     <div class="container">
+        <div class="leak-effect"></div>
         <h1>Ilija Grnev</h1>
         <p class="contact-info">Badstr. 70, 42699 Solingen | <a href="tel:+4915906506419">+49 1590 6506419</a> | <a href="mailto:ilegrne0@gmail.com">ilegrne0@gmail.com</a></p>
         
