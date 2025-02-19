@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lebenslauf - Ilija Grnev</title>
+    <title>Lebenslauf & CV - Ilija Grnev</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         
@@ -20,127 +20,20 @@
             height: 100vh;
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             background: white;
             padding: 30px;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
             border-radius: 12px;
             position: relative;
             overflow: hidden;
-        }
-        h1 {
-            color: #c00;
-            font-size: 42px;
-            font-weight: 700;
-            position: relative;
-            z-index: 2;
-        }
-        h1::before {
-            content: "3M";
-            font-size: 100px;
-            font-weight: 700;
-            color: #c00;
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0.1;
-            z-index: 1;
-        }
-        .leak-effect {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 50px;
-            background: url('leak-animation.gif') repeat-x;
-        }
-        h2 {
-            color: #d32f2f;
-            border-bottom: 3px solid #d32f2f;
-            padding-bottom: 5px;
-            font-size: 24px;
-            font-weight: 700;
-        }
-        .section p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #424242;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 20px;
-            color: #c00;
-            font-weight: bold;
-        }
-        .footer a {
-            color: #c00;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="leak-effect"></div>
-        <h1>Ilija Grnev</h1>
-        <p class="contact-info">Badstr. 70, 42699 Solingen | <a href="tel:+4915906506419">+49 1590 6506419</a> | <a href="mailto:ilegrne0@gmail.com">ilegrne0@gmail.com</a></p>
-        
-        <div class="section">
-            <h2>Berufserfahrung</h2>
-            <p><strong>Metal Servis Gabevi</strong> - 4 Jahre Erfahrung als Zerspanungsmechaniker mit umfassender Praxis an Universal- und CNC-Drehmaschinen (DNC CONTROL). Tätig in der Programmierung, Einrichtung und Bedienung der Maschinen.</p>
-            <p><strong>Steel Tailor 247</strong> - Maschinenbediener in Deutschland mit Spezialisierung auf die <strong>Trumf 5030</strong> (Touchscreen). Verantwortung für die Optimierung der Schnittprozesse und Qualitätskontrolle.</p>
-            <p><strong>Aktuell:</strong> Berufliche Tätigkeit bei <strong>3M</strong> in Deutschland.</p>
-        </div>
-        
-        <div class="section">
-            <h2>Bildung</h2>
-            <p>Abschluss als Mechatroniker mit fundierten Kenntnissen in Mechanik, Elektronik und Steuerungstechnik.</p>
-        </div>
-        
-        <div class="section">
-            <h2>Fähigkeiten</h2>
-            <p>Technische Expertise im Bereich CNC-Bearbeitung und Maschinensteuerung.</p>
-            <p>Präzises Arbeiten nach technischen Zeichnungen.</p>
-            <p>Fließende Sprachkenntnisse in Mazedonisch und Deutsch.</p>
-        </div>
-        
-        <div class="section">
-            <h2>Zertifikate</h2>
-            <p><strong>Fachzertifikat als Zerspanungsmechaniker</strong> mit Schwerpunkt auf Drehtechnik.</p>
-        </div>
-        
-        <div class="section">
-            <h2>Interessen</h2>
-            <p>Großes Interesse an moderner Fertigungstechnologie, Präzisionsarbeit und kontinuierlicher Weiterentwicklung.</p>
-            <p>Leidenschaft für Inspiration, Engagement und Disziplin.</p>
-        </div><!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lebenslauf - Ilija Grnev</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-        
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #add8e6;
-            text-align: center;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            justify-content: space-between;
         }
-        .container {
-            width: 80%;
-            background: white;
-            padding: 30px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-            border-radius: 12px;
-            position: relative;
-            overflow: hidden;
+        .cv, .lebenslauf {
+            width: 48%;
+            text-align: left;
         }
         h1 {
             color: #c00;
@@ -149,30 +42,28 @@
             position: relative;
             z-index: 2;
         }
-        h1::before {
-            content: "3M";
+        .logo-3m {
             font-size: 100px;
             font-weight: 700;
             color: #c00;
             position: absolute;
-            top: -20px;
+            top: 10px;
             left: 50%;
             transform: translateX(-50%);
-            opacity: 0.1;
-            z-index: 1;
+            z-index: 3;
         }
         .leak-effect {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 50px;
+            height: 60px;
             background: linear-gradient(to bottom, #c00, transparent);
             animation: leak-animation 2s infinite alternate;
         }
         @keyframes leak-animation {
-            0% { height: 50px; }
-            100% { height: 80px; }
+            0% { height: 60px; }
+            100% { height: 90px; }
         }
         h2 {
             color: #d32f2f;
@@ -201,46 +92,40 @@
 <body>
     <div class="container">
         <div class="leak-effect"></div>
-        <h1>Ilija Grnev</h1>
-        <p class="contact-info">Badstr. 70, 42699 Solingen | <a href="tel:+4915906506419">+49 1590 6506419</a> | <a href="mailto:ilegrne0@gmail.com">ilegrne0@gmail.com</a></p>
+        <div class="logo-3m">3M</div>
         
-        <div class="section">
-            <h2>Berufserfahrung</h2>
-            <p><strong>Metal Servis Gabevi</strong> - 4 Jahre Erfahrung als Zerspanungsmechaniker mit umfassender Praxis an Universal- und CNC-Drehmaschinen (DNC CONTROL). Tätig in der Programmierung, Einrichtung und Bedienung der Maschinen.</p>
-            <p><strong>Steel Tailor 247</strong> - Maschinenbediener in Deutschland mit Spezialisierung auf die <strong>Trumf 5030</strong> (Touchscreen). Verantwortung für die Optimierung der Schnittprozesse und Qualitätskontrolle.</p>
-            <p><strong>Aktuell:</strong> Berufliche Tätigkeit bei <strong>3M</strong> in Deutschland.</p>
+        <div class="cv">
+            <h1>Ilija Grnev</h1>
+            <p class="contact-info">Badstr. 70, 42699 Solingen | <a href="tel:+4915906506419">+49 1590 6506419</a> | <a href="mailto:ilegrne0@gmail.com">ilegrne0@gmail.com</a></p>
+            <div class="section">
+                <h2>Berufserfahrung</h2>
+                <p><strong>Metal Servis Gabevi</strong> - 4 Jahre Erfahrung als Zerspanungsmechaniker.</p>
+                <p><strong>Steel Tailor 247</strong> - Maschinenbediener in Deutschland.</p>
+                <p><strong>Aktuell:</strong> Berufliche Tätigkeit bei <strong>3M</strong> in Deutschland.</p>
+            </div>
+            <div class="section">
+                <h2>Bildung</h2>
+                <p>Abschluss als Mechatroniker.</p>
+            </div>
         </div>
         
-        <div class="section">
-            <h2>Bildung</h2>
-            <p>Abschluss als Mechatroniker mit fundierten Kenntnissen in Mechanik, Elektronik und Steuerungstechnik.</p>
+        <div class="lebenslauf">
+            <div class="section">
+                <h2>Fähigkeiten</h2>
+                <p>Technische Expertise im Bereich CNC-Bearbeitung.</p>
+                <p>Präzises Arbeiten nach technischen Zeichnungen.</p>
+                <p>Fließende Sprachkenntnisse in Mazedonisch und Deutsch.</p>
+            </div>
+            <div class="section">
+                <h2>Zertifikate</h2>
+                <p><strong>Fachzertifikat als Zerspanungsmechaniker</strong>.</p>
+            </div>
+            <div class="section">
+                <h2>Interessen</h2>
+                <p>Moderne Fertigungstechnologie, Präzisionsarbeit.</p>
+                <p>Leidenschaft für Inspiration, Engagement und Disziplin.</p>
+            </div>
         </div>
-        
-        <div class="section">
-            <h2>Fähigkeiten</h2>
-            <p>Technische Expertise im Bereich CNC-Bearbeitung und Maschinensteuerung.</p>
-            <p>Präzises Arbeiten nach technischen Zeichnungen.</p>
-            <p>Fließende Sprachkenntnisse in Mazedonisch und Deutsch.</p>
-        </div>
-        
-        <div class="section">
-            <h2>Zertifikate</h2>
-            <p><strong>Fachzertifikat als Zerspanungsmechaniker</strong> mit Schwerpunkt auf Drehtechnik.</p>
-        </div>
-        
-        <div class="section">
-            <h2>Interessen</h2>
-            <p>Großes Interesse an moderner Fertigungstechnologie, Präzisionsarbeit und kontinuierlicher Weiterentwicklung.</p>
-            <p>Leidenschaft für Inspiration, Engagement und Disziplin.</p>
-        </div>
-        
-        <div class="footer">Kontakt: <a href="tel:+4915906506419">+49 1590 6506419</a></div>
-    </div>
-</body>
-</html>
-
-        
-        <div class="footer">Kontakt: <a href="tel:+4915906506419">+49 1590 6506419</a></div>
     </div>
 </body>
 </html>
